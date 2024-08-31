@@ -1,9 +1,13 @@
 import './App.css'
 import Component from './Component.jsx'
+import ThemeProvider from './context/ThemeContext.jsx'
 
 function App() {
   return (
-    <Component />
+    <ThemeProvider>
+       <Component />
+    </ThemeProvider>
+   
   )
 }
 
